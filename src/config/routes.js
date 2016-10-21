@@ -9,11 +9,8 @@ import MemeGenerator from '../components/MemeGenerator'
 
 export default (
   <Route path='/' component={NavBar}>
-    <Route path='/memes' component={Main}>
-      <Route path='cats' component={Cats}/>
-      <Route path='yoda' component={Yoda}/>
-      <Route path='memeGenerator' component={MemeGenerator}/>
-      <Route path=':quote' component={Quote} />
-    </Route>
+    <Route path='memes/cats' component={Cats}/>
+    <Route path='memes/memeGenerator' component={MemeGenerator}/>
+    <Route path='memes/:quote' component={Quote} />
   </Route>
 )

@@ -36,9 +36,6 @@ const MenuExampleSimple = (props) => (
         <Link to='/memes/cats' style={style.link}>
           <MenuItem primaryText="Cats" />
         </Link>
-        <Link to='/memes/yoda' style={style.link}>
-          <MenuItem primaryText="Yoda" />
-        </Link>
         <Link to='/memes/memeGenerator' style={style.link}>
           <MenuItem primaryText="memeGenerator" />
         </Link>

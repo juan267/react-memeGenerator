@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import AppBar from 'material-ui/AppBar';
+import Main from './Main'
 
 const NavBar = (props) => {
   return (
@@ -8,7 +9,9 @@ const NavBar = (props) => {
         title="Quote and Meme Generator"
         iconClassNameRight="muidocs-icon-navigation-expand-more"
       />
-      {props.children}
+      <Main>
+        {props.children}
+      </Main>
     </div>
   )
 }
